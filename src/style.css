@@ -1,0 +1,89 @@
+ :root{
+            --main-color:#fff;
+            --dark-theme:rgb(0,0,0);
+        }
+        body{
+            background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        .dark{
+           background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);;
+           color: var(--main-color);
+        }
+        .dark .container{
+            background-color: rgba(139, 139, 139, 0.3);
+        }
+        .container {
+            max-width: 600px;
+            margin: 10px auto;
+            background-color: var(--main-color);
+            border: 1px solid var(--main-theme);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        h1, h2{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .photo-gallery{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap:10px;
+            margin: 15px 0;
+          
+        }
+        .photo-gallery img{
+            transition: scale 300ms ease-in-out
+        }
+        .photo-gallery img:hover{
+            transform: scale(1.5);
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        button{
+            color: var(--main-color);
+            display: block;
+            margin: 10px auto;
+            background-color: var(--dark-theme);
+            border: 1px solid var(--dark-theme);
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 16px;
+            transition: all 150ms ease-in-out;
+        }
+        button:hover{
+            color: var(--dark-theme);
+            background-color: var(--main-color);
+            cursor: pointer;
+        }
+         .darkBtn{
+            color:var(--dark-theme);
+            background-color: var(--main-color);
+            border: 1px solid var(--main-color);
+        }
+        
+        a{
+            color: plum;
+        }
+        .link{
+            text-decoration: none;
+        }
+        footer{
+            font-size: 20px;
+            text-align: center;
+            margin: 10px 0 px;
+        }
+        .dog-ramp-photo{
+            transition: all 200ms ease-in-out;
+        }
+        .dog-ramp-photo:hover{
+           filter: contrast(80%);
+           transform: scale(1.1);
+        }
